@@ -1,5 +1,16 @@
 
 # Plate Up 
+## Getting Started
+
+To start the PlateUp development server:  
+
+1. Open your **Command Prompt** (or terminal).  
+2. Navigate to the project folder if you’re not already there.  
+3. Run the following command:  
+
+```bash
+npm run dev
+
 ## General Project Description.
 #### Plateup is a smart and personalised meal planning tool meant to help users find recipes that match their dietary restrictions, preferences and the ingredients they have available on hand. Additionally, PlateUp generates customised weekly meal plans and auto-creates shopping lists based on the same meal plans. Users are also able to save their favourite recipes for future use. We, at PlateUp, aim to reduce the stress of last-minute meals and save time for all our customers.
 
