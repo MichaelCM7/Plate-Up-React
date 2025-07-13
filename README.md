@@ -10,6 +10,7 @@ To start the PlateUp development server:
 
 ```bash
 npm run dev
+```
 
 ## General Project Description.
 #### Plateup is a smart and personalised meal planning tool meant to help users find recipes that match their dietary restrictions, preferences and the ingredients they have available on hand. Additionally, PlateUp generates customised weekly meal plans and auto-creates shopping lists based on the same meal plans. Users are also able to save their favourite recipes for future use. We, at PlateUp, aim to reduce the stress of last-minute meals and save time for all our customers.
