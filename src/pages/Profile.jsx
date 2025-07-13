@@ -131,8 +131,8 @@ const Profile = () => {
                     </div>
                     <nav>
                         <ul className="nav-links">
-                            <li><Link to="/HomePage_SignedIn">Home</Link></li>
-                            <li><Link to="/recipe">Recipes</Link></li>
+                            <li><Link to="/Home">Home</Link></li>
+                            <li><Link to="/All-Recipes">Recipes</Link></li>
                             <li><Link to="/Meal-Planner">Meal Plans</Link></li>
                             <li><Link to="/Favourites">Favourites</Link></li>
                             <li><Link to="/AboutUs-S">About</Link></li>
