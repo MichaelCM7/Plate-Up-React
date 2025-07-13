@@ -4,10 +4,10 @@ import '../styles/MealPlanner.css';
 
 const MealPlanner = () => {
     const navigate = useNavigate();
-    const location = useLocation(); // Hook to access navigation state
+    const location = useLocation(); 
 
-    // Spoonacular API Key (replace with your actual key)
-    const SPOONACULAR_API_KEY = '5e4e856e5b354ae1b55eacedc0c8ad37'; // IMPORTANT: Replace with your actual Spoonacular API Key
+    // Spoonacular API Key 
+    const SPOONACULAR_API_KEY = '7c475540a58b446d8a3240c37fcd7e2d';
 
     // State to store the meal plans for the week
     const [mealPlans, setMealPlans] = useState(() => {
@@ -36,8 +36,8 @@ const MealPlanner = () => {
     const [searchInputs, setSearchInputs] = useState({});
 
     // State to keep track of the currently selected meal slot for adding recipes
-    const [selectedSlot, setSelectedSlot] = useState(null); // { day: 'monday', mealType: 'breakfast' }
-
+    const [selectedSlot, setSelectedSlot] = useState(null); 
+    
     // State to store filtered search suggestions for each meal slot
     const [filteredSearchSuggestions, setFilteredSearchSuggestions] = useState({});
     const [loadingSearchSuggestions, setLoadingSearchSuggestions] = useState({});

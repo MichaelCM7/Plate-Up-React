@@ -20,7 +20,7 @@ const Recipe_S = () => {
     const [favoritedRecipes, setFavoritedRecipes] = useState({});
 
     // Spoonacular API key
-    const SPOONACULAR_API_KEY = '5e4e856e5b354ae1b55eacedc0c8ad37'; // Ensure your actual key is here
+    const SPOONACULAR_API_KEY = '7c475540a58b446d8a3240c37fcd7e2d'; // Ensure your actual key is here
 
     // Load favorited recipes from localStorage on initial mount
     useEffect(() => {

@@ -14,13 +14,12 @@ const Recipes = () => {
     const [recipes, setRecipes] = useState([]); //To hold fetched recipe data
 
     //States for API calls
-    //True when fetching data , false otherwise
     const [loading , setLoading] = useState(true);
     //null if no error, otherwise will hold error message
     const [error , setError] = useState(null);
 
     // Spoonacular API Key
-    const SPOONACULAR_API_KEY = '5e4e856e5b354ae1b55eacedc0c8ad37';
+    const SPOONACULAR_API_KEY = '7c475540a58b446d8a3240c37fcd7e2d';
 
     const fetchRecipes = async () => {
         setLoading(true);

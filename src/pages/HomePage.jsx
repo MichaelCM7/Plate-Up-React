@@ -6,8 +6,8 @@ const SignedInHomepage = () => {
     const navigate = useNavigate();
     const [searchQuery, setSearchQuery] = useState('');
 
-    // Spoonacular API Key (replace with your actual key if needed for fetching recipe details)
-    const SPOONACULAR_API_KEY = 'YOUR_SPOONACULAR_API_KEY'; // IMPORTANT: Replace with your actual Spoonacular API Key
+    // Spoonacular API Key
+    const SPOONACULAR_API_KEY = '7c475540a58b446d8a3240c37fcd7e2d'; 
 
     // State for dynamic data
     const [todaysMeals, setTodaysMeals] = useState({
@@ -19,8 +19,8 @@ const SignedInHomepage = () => {
     const [quickStats, setQuickStats] = useState({
         savedRecipes: 0,
         mealsPlanned: 0,
-        completedMeals: 0, // Placeholder, as this requires more complex tracking
-        streakDays: 0 // Placeholder, as this requires more complex tracking
+        completedMeals: 0, 
+        streakDays: 0 
     });
     const [recommendedRecipes, setRecommendedRecipes] = useState([]); // State for recommended recipes - this will now remain empty
     const [loadingRecommended, setLoadingRecommended] = useState(false); // Loading state for recommended recipes
@@ -77,16 +77,13 @@ const SignedInHomepage = () => {
         }
     }, []);
 
-    // Effect to fetch recommended recipes (this section is now removed as per user request)
-    // The state and loading state for recommended recipes will remain but won't be populated
+    // Effect to fetch recommended recipes 
     useEffect(() => {
-        // This effect is now empty as the recommended section is removed.
-        // You could remove the recommendedRecipes state and loadingRecommended state if they are not used elsewhere.
         setLoadingRecommended(false);
     }, []);
 
 
-    // Helper function to get meal type icons (reused from MealPlanner)
+    // Helper function to get meal type icons
     const getMealTypeIcon = (mealType) => {
         switch (mealType) {
             case 'breakfast': return '🍳';
@@ -104,8 +101,7 @@ const SignedInHomepage = () => {
     };
 
     const handleViewRecipe = async (recipe) => {
-        // If the recipe object is already detailed (e.g., from meal plan), use it directly
-        // Otherwise, fetch full details if only ID is available (e.g., from basic favorites list)
+        // If the recipe object is already detailed Otherwise, fetch full details if only ID available 
         if (recipe && recipe.id && !recipe.extendedIngredients) {
             setApiError(null); // Clear previous errors
             try {
